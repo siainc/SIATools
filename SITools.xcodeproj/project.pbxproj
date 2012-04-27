@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A387840A154955A500E16091 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3878409154955A500E16091 /* UIKit.framework */; };
+		A387840C154955A500E16091 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A387840B154955A500E16091 /* Foundation.framework */; };
+		A387840E154955A500E16091 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A387840D154955A500E16091 /* CoreGraphics.framework */; };
+		A3878414154955A500E16091 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3878412154955A500E16091 /* InfoPlist.strings */; };
+		A3878416154955A500E16091 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3878415154955A500E16091 /* main.m */; };
+		A387841A154955A600E16091 /* SIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3878419154955A500E16091 /* SIAppDelegate.m */; };
+		A387841D154955A600E16091 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A387841B154955A600E16091 /* MainStoryboard.storyboard */; };
+		A3878420154955A600E16091 /* SIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A387841F154955A600E16091 /* SIViewController.m */; };
+		A38784281549563F00E16091 /* NSDate+SITools.m in Sources */ = {isa = PBXBuildFile; fileRef = A38784271549563F00E16091 /* NSDate+SITools.m */; };
+		A387842B15495BF800E16091 /* NSString+SITools.m in Sources */ = {isa = PBXBuildFile; fileRef = A387842A15495BF800E16091 /* NSString+SITools.m */; };
+		A3878448154988D800E16091 /* SIDateStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3878447154988D800E16091 /* SIDateStringViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A3878405154955A500E16091 /* SITools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SITools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3878409154955A500E16091 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A387840B154955A500E16091 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A387840D154955A500E16091 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A3878411154955A500E16091 /* SITools-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SITools-Info.plist"; sourceTree = "<group>"; };
+		A3878413154955A500E16091 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A3878415154955A500E16091 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3878417154955A500E16091 /* SITools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SITools-Prefix.pch"; sourceTree = "<group>"; };
+		A3878418154955A500E16091 /* SIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIAppDelegate.h; sourceTree = "<group>"; };
+		A3878419154955A500E16091 /* SIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIAppDelegate.m; sourceTree = "<group>"; };
+		A387841C154955A600E16091 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A387841E154955A600E16091 /* SIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIViewController.h; sourceTree = "<group>"; };
+		A387841F154955A600E16091 /* SIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIViewController.m; sourceTree = "<group>"; };
+		A38784261549563F00E16091 /* NSDate+SITools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SITools.h"; sourceTree = "<group>"; };
+		A38784271549563F00E16091 /* NSDate+SITools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SITools.m"; sourceTree = "<group>"; };
+		A387842915495BF800E16091 /* NSString+SITools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SITools.h"; sourceTree = "<group>"; };
+		A387842A15495BF800E16091 /* NSString+SITools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SITools.m"; sourceTree = "<group>"; };
+		A3878446154988D800E16091 /* SIDateStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDateStringViewController.h; sourceTree = "<group>"; };
+		A3878447154988D800E16091 /* SIDateStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDateStringViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3878402154955A500E16091 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A387840A154955A500E16091 /* UIKit.framework in Frameworks */,
+				A387840C154955A500E16091 /* Foundation.framework in Frameworks */,
+				A387840E154955A500E16091 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A38783FA154955A500E16091 = {
+			isa = PBXGroup;
+			children = (
+				A387840F154955A500E16091 /* SITools */,
+				A3878408154955A500E16091 /* Frameworks */,
+				A3878406154955A500E16091 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3878406154955A500E16091 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3878405154955A500E16091 /* SITools.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3878408154955A500E16091 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3878409154955A500E16091 /* UIKit.framework */,
+				A387840B154955A500E16091 /* Foundation.framework */,
+				A387840D154955A500E16091 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A387840F154955A500E16091 /* SITools */ = {
+			isa = PBXGroup;
+			children = (
+				A3878418154955A500E16091 /* SIAppDelegate.h */,
+				A3878419154955A500E16091 /* SIAppDelegate.m */,
+				A387841B154955A600E16091 /* MainStoryboard.storyboard */,
+				A387841E154955A600E16091 /* SIViewController.h */,
+				A387841F154955A600E16091 /* SIViewController.m */,
+				A38784261549563F00E16091 /* NSDate+SITools.h */,
+				A38784271549563F00E16091 /* NSDate+SITools.m */,
+				A387842915495BF800E16091 /* NSString+SITools.h */,
+				A387842A15495BF800E16091 /* NSString+SITools.m */,
+				A3878446154988D800E16091 /* SIDateStringViewController.h */,
+				A3878447154988D800E16091 /* SIDateStringViewController.m */,
+				A3878410154955A500E16091 /* Supporting Files */,
+			);
+			path = SITools;
+			sourceTree = "<group>";
+		};
+		A3878410154955A500E16091 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3878411154955A500E16091 /* SITools-Info.plist */,
+				A3878412154955A500E16091 /* InfoPlist.strings */,
+				A3878415154955A500E16091 /* main.m */,
+				A3878417154955A500E16091 /* SITools-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3878404154955A500E16091 /* SITools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3878423154955A600E16091 /* Build configuration list for PBXNativeTarget "SITools" */;
+			buildPhases = (
+				A3878401154955A500E16091 /* Sources */,
+				A3878402154955A500E16091 /* Frameworks */,
+				A3878403154955A500E16091 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SITools;
+			productName = SITools;
+			productReference = A3878405154955A500E16091 /* SITools.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A38783FC154955A500E16091 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SI;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "SI Agency Inc";
+			};
+			buildConfigurationList = A38783FF154955A500E16091 /* Build configuration list for PBXProject "SITools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A38783FA154955A500E16091;
+			productRefGroup = A3878406154955A500E16091 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3878404154955A500E16091 /* SITools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3878403154955A500E16091 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3878414154955A500E16091 /* InfoPlist.strings in Resources */,
+				A387841D154955A600E16091 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3878401154955A500E16091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3878416154955A500E16091 /* main.m in Sources */,
+				A387841A154955A600E16091 /* SIAppDelegate.m in Sources */,
+				A3878420154955A600E16091 /* SIViewController.m in Sources */,
+				A38784281549563F00E16091 /* NSDate+SITools.m in Sources */,
+				A387842B15495BF800E16091 /* NSString+SITools.m in Sources */,
+				A3878448154988D800E16091 /* SIDateStringViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3878412154955A500E16091 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3878413154955A500E16091 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A387841B154955A600E16091 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A387841C154955A600E16091 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3878421154955A600E16091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A3878422154955A600E16091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3878424154955A600E16091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SITools/SITools-Prefix.pch";
+				INFOPLIST_FILE = "SITools/SITools-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A3878425154955A600E16091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SITools/SITools-Prefix.pch";
+				INFOPLIST_FILE = "SITools/SITools-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A38783FF154955A500E16091 /* Build configuration list for PBXProject "SITools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3878421154955A600E16091 /* Debug */,
+				A3878422154955A600E16091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3878423154955A600E16091 /* Build configuration list for PBXNativeTarget "SITools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3878424154955A600E16091 /* Debug */,
+				A3878425154955A600E16091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A38783FC154955A500E16091 /* Project object */;
+}
