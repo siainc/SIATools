@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A354C623154FA45D007C8B2C /* SIBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A354C622154FA45D007C8B2C /* SIBlock.m */; };
 		A387840A154955A500E16091 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3878409154955A500E16091 /* UIKit.framework */; };
 		A387840C154955A500E16091 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A387840B154955A500E16091 /* Foundation.framework */; };
 		A387840E154955A500E16091 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A387840D154955A500E16091 /* CoreGraphics.framework */; };
@@ -18,9 +19,12 @@
 		A38784281549563F00E16091 /* NSDate+SITools.m in Sources */ = {isa = PBXBuildFile; fileRef = A38784271549563F00E16091 /* NSDate+SITools.m */; };
 		A387842B15495BF800E16091 /* NSString+SITools.m in Sources */ = {isa = PBXBuildFile; fileRef = A387842A15495BF800E16091 /* NSString+SITools.m */; };
 		A3878448154988D800E16091 /* SIDateStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3878447154988D800E16091 /* SIDateStringViewController.m */; };
+		A3DD01DA154A8E8200321A66 /* SIObjectBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DD01D9154A8E8200321A66 /* SIObjectBlockViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A354C622154FA45D007C8B2C /* SIBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIBlock.m; sourceTree = "<group>"; };
+		A354C625154FA46C007C8B2C /* SIBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIBlock.h; sourceTree = "<group>"; };
 		A3878405154955A500E16091 /* SITools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SITools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3878409154955A500E16091 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A387840B154955A500E16091 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,6 +44,8 @@
 		A387842A15495BF800E16091 /* NSString+SITools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SITools.m"; sourceTree = "<group>"; };
 		A3878446154988D800E16091 /* SIDateStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIDateStringViewController.h; sourceTree = "<group>"; };
 		A3878447154988D800E16091 /* SIDateStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIDateStringViewController.m; sourceTree = "<group>"; };
+		A3DD01D8154A8E8200321A66 /* SIObjectBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIObjectBlockViewController.h; sourceTree = "<group>"; };
+		A3DD01D9154A8E8200321A66 /* SIObjectBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIObjectBlockViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,10 @@
 				A387842A15495BF800E16091 /* NSString+SITools.m */,
 				A3878446154988D800E16091 /* SIDateStringViewController.h */,
 				A3878447154988D800E16091 /* SIDateStringViewController.m */,
+				A354C625154FA46C007C8B2C /* SIBlock.h */,
+				A354C622154FA45D007C8B2C /* SIBlock.m */,
+				A3DD01D8154A8E8200321A66 /* SIObjectBlockViewController.h */,
+				A3DD01D9154A8E8200321A66 /* SIObjectBlockViewController.m */,
 				A3878410154955A500E16091 /* Supporting Files */,
 			);
 			path = SITools;
@@ -183,6 +193,8 @@
 				A38784281549563F00E16091 /* NSDate+SITools.m in Sources */,
 				A387842B15495BF800E16091 /* NSString+SITools.m in Sources */,
 				A3878448154988D800E16091 /* SIDateStringViewController.m in Sources */,
+				A3DD01DA154A8E8200321A66 /* SIObjectBlockViewController.m in Sources */,
+				A354C623154FA45D007C8B2C /* SIBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
