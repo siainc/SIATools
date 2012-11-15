@@ -2,11 +2,13 @@
 //  SIAppDelegate.m
 //  SITools
 //
-//  Created by Kurosaki Ryota on 12/04/26.
-//  Copyright (c) 2012年 SI Agency Inc. All rights reserved.
+//  Created by KUROSAKI Ryota on 2012/04/26.
+//  Copyright (c) 2012 SI Agency Inc. All rights reserved.
 //
 
 #import "SIAppDelegate.h"
+#import "TestClass.h"
+#import "SILog.h"
 
 @implementation SIAppDelegate
 
@@ -15,6 +17,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    ELog(@"%@", [[TestClass alloc] init]);
     return YES;
 }
 							

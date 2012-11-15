@@ -2,8 +2,8 @@
 //  NSDate+SITools.m
 //  SITools
 //
-//  Created by Kurosaki Ryota on 12/04/26.
-//  Copyright (c) 2012年 SI Agency Inc. All rights reserved.
+//  Created by KUROSAKI Ryota on 2012/04/26.
+//  Copyright (c) 2012 SI Agency Inc. All rights reserved.
 //
 
 #import "NSDate+SITools.h"
@@ -11,13 +11,13 @@
 @implementation NSDate (SITools)
 @dynamic components;
 
-+ (NSDate*)dateFromString:(NSString*)string withFormat:(NSString*)format
++ (NSDate *)dateFromString:(NSString *)string withFormat:(NSString *)format
 {
     NSDate *date = [self dateFromString:string withFormat:format locale:[NSLocale currentLocale]];
     return date;
 }
 
-+ (NSDate*)dateFromString:(NSString*)string withFormat:(NSString*)format locale:(NSLocale*)locale
++ (NSDate *)dateFromString:(NSString *)string withFormat:(NSString *)format locale:(NSLocale *)locale
 {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.dateFormat = format;
@@ -26,7 +26,7 @@
     return date;
 }
 
-+ (NSDate*)dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day
++ (NSDate *)dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day
                    hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second
 {
     NSDate *date = [self dateWithYear:year month:month day:day
@@ -35,9 +35,9 @@
     return date;
 }
 
-+ (NSDate*)dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day
++ (NSDate *)dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day
                    hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second
-               calendar:(NSCalendar*)calendar
+               calendar:(NSCalendar *)calendar
 {
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setYear:year];
@@ -51,13 +51,13 @@
     return date;
 }
 
-- (NSDateComponents*)components
+- (NSDateComponents *)components
 {
     NSDateComponents *components = [self componentsWithCalendar:[NSCalendar currentCalendar]];
     return components;
 }
 
-- (NSDateComponents*)componentsWithCalendar:(NSCalendar*)calendar
+- (NSDateComponents *)componentsWithCalendar:(NSCalendar *)calendar
 {
     NSUInteger unitFlags = (NSEraCalendarUnit |
                             NSYearCalendarUnit |

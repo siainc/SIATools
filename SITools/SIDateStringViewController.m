@@ -2,8 +2,8 @@
 //  SIDateStringViewController.m
 //  SITools
 //
-//  Created by Kurosaki Ryota on 12/04/26.
-//  Copyright (c) 2012年 SI Agency Inc. All rights reserved.
+//  Created by KUROSAKI Ryota on 2012/04/26.
+//  Copyright (c) 2012 SI Agency Inc. All rights reserved.
 //
 
 #import "SIDateStringViewController.h"
