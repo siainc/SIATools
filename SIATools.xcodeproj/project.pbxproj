@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A303BC82169D050100123CDE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A303BC81169D050100123CDE /* Reachability.m */; };
+		A30DE98B161D63F0001B8934 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30DE98A161D63F0001B8934 /* QuartzCore.framework */; };
+		A31627031733DA2B0058CAFE /* SIABase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A31626B61733DA2B0058CAFE /* SIABase64.m */; };
+		A316270A1733DA2B0058CAFE /* SIADescriptionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A31626C41733DA2B0058CAFE /* SIADescriptionBuilder.m */; };
+		A316270C1733DA2B0058CAFE /* SIAFileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A31626C81733DA2B0058CAFE /* SIAFileCache.m */; };
+		A31627111733DA2B0058CAFE /* SIAGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = A31626D41733DA2B0058CAFE /* SIAGeometry.m */; };
+		A31627121733DA2B0058CAFE /* SIAHash.m in Sources */ = {isa = PBXBuildFile; fileRef = A31626D61733DA2B0058CAFE /* SIAHash.m */; };
+		A31627131733DA2B0058CAFE /* SIAID.m in Sources */ = {isa = PBXBuildFile; fileRef = A31626D81733DA2B0058CAFE /* SIAID.m */; };
+		A31627151733DA2B0058CAFE /* SIAImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A31626DC1733DA2B0058CAFE /* SIAImageCache.m */; };
+		A31627171733DA2B0058CAFE /* SIAKeyboardAdjuster.m in Sources */ = {isa = PBXBuildFile; fileRef = A31626E01733DA2B0058CAFE /* SIAKeyboardAdjuster.m */; };
+		A31627191733DA2B0058CAFE /* SIALogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A31626E41733DA2B0058CAFE /* SIALogger.m */; };
+		A316271D1733DA2B0058CAFE /* SIAPathTools.m in Sources */ = {isa = PBXBuildFile; fileRef = A31626EC1733DA2B0058CAFE /* SIAPathTools.m */; };
+		A316271E1733DA2B0058CAFE /* SIAToolsLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A31626EF1733DA2B0058CAFE /* SIAToolsLogger.m */; };
+		A316271F1733DA2B0058CAFE /* SIAWeakReference.m in Sources */ = {isa = PBXBuildFile; fileRef = A31626F11733DA2B0058CAFE /* SIAWeakReference.m */; };
+		A31A6FD31845FC6900D63C56 /* UIActionSheet+SIABlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A31A6FCC1845FC6900D63C56 /* UIActionSheet+SIABlocks.m */; };
+		A31A6FD41845FC6900D63C56 /* UIAlertView+SIABlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A31A6FCE1845FC6900D63C56 /* UIAlertView+SIABlocks.m */; };
+		A31A6FD51845FC6900D63C56 /* UIPickerView+SIABlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A31A6FD01845FC6900D63C56 /* UIPickerView+SIABlocks.m */; };
+		A31A6FD61845FC6900D63C56 /* UITextField+SIABlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A31A6FD21845FC6900D63C56 /* UITextField+SIABlocks.m */; };
+		A34DD41917966C690049658C /* SIABlockAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD3F817966C690049658C /* SIABlockAction.m */; };
+		A34DD41A17966C690049658C /* SIABlockProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD3FA17966C690049658C /* SIABlockProtocol.m */; };
+		A34DD41B17966C690049658C /* SIAControlAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD3FC17966C690049658C /* SIAControlAction.m */; };
+		A34DD41C17966C690049658C /* SIAExpandableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD3FE17966C690049658C /* SIAExpandableObject.m */; };
+		A34DD41D17966C690049658C /* SIAGestureAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD40017966C690049658C /* SIAGestureAction.m */; };
+		A34DD41E17966C690049658C /* SIAObserverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD40217966C690049658C /* SIAObserverAction.m */; };
+		A34DD41F17966C690049658C /* SIATimerAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD40417966C690049658C /* SIATimerAction.m */; };
+		A34DD42017966C690049658C /* SIAFTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD40817966C690049658C /* SIAFTPClient.m */; };
+		A34DD42117966C690049658C /* SIAFTPCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD40A17966C690049658C /* SIAFTPCommand.m */; };
+		A34DD42217966C690049658C /* SIAFTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD40D17966C690049658C /* SIAFTPOperation.m */; };
+		A34DD42317966C690049658C /* SIAFTPReply.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD40F17966C690049658C /* SIAFTPReply.m */; };
+		A34DD42417966C690049658C /* SIABaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD41217966C690049658C /* SIABaseOperation.m */; };
+		A34DD42517966C690049658C /* SIABlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD41417966C690049658C /* SIABlockOperation.m */; };
+		A34DD42617966C690049658C /* SIAConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD41617966C690049658C /* SIAConnectionOperation.m */; };
+		A34DD42717966C690049658C /* SIAOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD41817966C690049658C /* SIAOperationQueue.m */; };
+		A34DD44517966EAD0049658C /* NSArray+SIATools.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD42C17966EAD0049658C /* NSArray+SIATools.m */; };
+		A34DD44617966EAD0049658C /* NSBundle+SIATools.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD42E17966EAD0049658C /* NSBundle+SIATools.m */; };
+		A34DD44717966EAD0049658C /* NSCoder+SIATools.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD43017966EAD0049658C /* NSCoder+SIATools.m */; };
+		A34DD44817966EAD0049658C /* NSData+SIATools.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD43217966EAD0049658C /* NSData+SIATools.m */; };
+		A34DD44917966EAD0049658C /* NSDate+SIATools.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD43417966EAD0049658C /* NSDate+SIATools.m */; };
+		A34DD44A17966EAD0049658C /* NSEnumerator+SIATools.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD43617966EAD0049658C /* NSEnumerator+SIATools.m */; };
+		A34DD44B17966EAD0049658C /* NSObject+SIATools.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD43817966EAD0049658C /* NSObject+SIATools.m */; };
+		A34DD44C17966EAD0049658C /* NSStream+SIATools.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD43A17966EAD0049658C /* NSStream+SIATools.m */; };
+		A34DD44D17966EAD0049658C /* NSString+SIAHalfwidth.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD43C17966EAD0049658C /* NSString+SIAHalfwidth.m */; };
+		A34DD44E17966EAD0049658C /* NSString+SIATools.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD43E17966EAD0049658C /* NSString+SIATools.m */; };
+		A34DD44F17966EAD0049658C /* NSURL+SIATools.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD44017966EAD0049658C /* NSURL+SIATools.m */; };
+		A34DD45017966EAD0049658C /* UIColor+SIATools.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD44217966EAD0049658C /* UIColor+SIATools.m */; };
+		A34DD45117966EAD0049658C /* UIImage+SIATools.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD44417966EAD0049658C /* UIImage+SIATools.m */; };
+		A34DD45E179672080049658C /* SIAAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD455179672080049658C /* SIAAlertView.m */; };
+		A34DD45F179672080049658C /* SIAImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD457179672080049658C /* SIAImageButton.m */; };
+		A34DD460179672080049658C /* SIAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD459179672080049658C /* SIAImageView.m */; };
+		A34DD461179672080049658C /* SIAOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD45B179672080049658C /* SIAOverlayView.m */; };
+		A34DD462179672080049658C /* SIAPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DD45D179672080049658C /* SIAPageView.m */; };
+		A361919A1716B76900650031 /* SIAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A36191991716B76900650031 /* SIAAppDelegate.m */; };
+		A36191A61716B7DA00650031 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A36191A41716B7DA00650031 /* main.m */; };
+		A36191AB1716B7FA00650031 /* SIAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36191A81716B7FA00650031 /* SIAViewController.m */; };
+		A36191AC1716B7FA00650031 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A36191AA1716B7FA00650031 /* TestClass.m */; };
+		A36191AF1716B80600650031 /* SIADateStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36191AE1716B80600650031 /* SIADateStringViewController.m */; };
+		A36192981716BB4100650031 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36192971716BB4100650031 /* MainStoryboard.storyboard */; };
+		A361929A1716BB4700650031 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A36192991716BB4700650031 /* InfoPlist.strings */; };
+		A361929C1716BB5B00650031 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A361929B1716BB5A00650031 /* Default-568h@2x.png */; };
+		A387840A154955A500E16091 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3878409154955A500E16091 /* UIKit.framework */; };
+		A387840C154955A500E16091 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A387840B154955A500E16091 /* Foundation.framework */; };
+		A387840E154955A500E16091 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A387840D154955A500E16091 /* CoreGraphics.framework */; };
+		A3CB988F16142D8F005DDA9C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CB988E16142D8F005DDA9C /* SystemConfiguration.framework */; };
+		A3DC0934182A220800A1CB58 /* NSDateFormatter+SIATools.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DC0933182A220800A1CB58 /* NSDateFormatter+SIATools.m */; };
+		A3F2CF6E16B7CC3E0007822E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F2CF6D16B7CC3E0007822E /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A303BC80169D050100123CDE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A303BC81169D050100123CDE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A30DE98A161D63F0001B8934 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A31626B51733DA2B0058CAFE /* SIABase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIABase64.h; sourceTree = "<group>"; };
+		A31626B61733DA2B0058CAFE /* SIABase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIABase64.m; sourceTree = "<group>"; };
+		A31626C31733DA2B0058CAFE /* SIADescriptionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIADescriptionBuilder.h; sourceTree = "<group>"; };
+		A31626C41733DA2B0058CAFE /* SIADescriptionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIADescriptionBuilder.m; sourceTree = "<group>"; };
+		A31626C71733DA2B0058CAFE /* SIAFileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAFileCache.h; sourceTree = "<group>"; };
+		A31626C81733DA2B0058CAFE /* SIAFileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAFileCache.m; sourceTree = "<group>"; };
+		A31626D31733DA2B0058CAFE /* SIAGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAGeometry.h; sourceTree = "<group>"; };
+		A31626D41733DA2B0058CAFE /* SIAGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAGeometry.m; sourceTree = "<group>"; };
+		A31626D51733DA2B0058CAFE /* SIAHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAHash.h; sourceTree = "<group>"; };
+		A31626D61733DA2B0058CAFE /* SIAHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAHash.m; sourceTree = "<group>"; };
+		A31626D71733DA2B0058CAFE /* SIAID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAID.h; sourceTree = "<group>"; };
+		A31626D81733DA2B0058CAFE /* SIAID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAID.m; sourceTree = "<group>"; };
+		A31626DB1733DA2B0058CAFE /* SIAImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAImageCache.h; sourceTree = "<group>"; };
+		A31626DC1733DA2B0058CAFE /* SIAImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAImageCache.m; sourceTree = "<group>"; };
+		A31626DF1733DA2B0058CAFE /* SIAKeyboardAdjuster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAKeyboardAdjuster.h; sourceTree = "<group>"; };
+		A31626E01733DA2B0058CAFE /* SIAKeyboardAdjuster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAKeyboardAdjuster.m; sourceTree = "<group>"; };
+		A31626E31733DA2B0058CAFE /* SIALogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIALogger.h; sourceTree = "<group>"; };
+		A31626E41733DA2B0058CAFE /* SIALogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIALogger.m; sourceTree = "<group>"; };
+		A31626EB1733DA2B0058CAFE /* SIAPathTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAPathTools.h; sourceTree = "<group>"; };
+		A31626EC1733DA2B0058CAFE /* SIAPathTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAPathTools.m; sourceTree = "<group>"; };
+		A31626ED1733DA2B0058CAFE /* SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIATools.h; sourceTree = "<group>"; };
+		A31626EE1733DA2B0058CAFE /* SIAToolsLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAToolsLogger.h; sourceTree = "<group>"; };
+		A31626EF1733DA2B0058CAFE /* SIAToolsLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAToolsLogger.m; sourceTree = "<group>"; };
+		A31626F01733DA2B0058CAFE /* SIAWeakReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAWeakReference.h; sourceTree = "<group>"; };
+		A31626F11733DA2B0058CAFE /* SIAWeakReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAWeakReference.m; sourceTree = "<group>"; };
+		A31A6FCB1845FC6900D63C56 /* UIActionSheet+SIABlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+SIABlocks.h"; sourceTree = "<group>"; };
+		A31A6FCC1845FC6900D63C56 /* UIActionSheet+SIABlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+SIABlocks.m"; sourceTree = "<group>"; };
+		A31A6FCD1845FC6900D63C56 /* UIAlertView+SIABlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+SIABlocks.h"; sourceTree = "<group>"; };
+		A31A6FCE1845FC6900D63C56 /* UIAlertView+SIABlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+SIABlocks.m"; sourceTree = "<group>"; };
+		A31A6FCF1845FC6900D63C56 /* UIPickerView+SIABlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+SIABlocks.h"; sourceTree = "<group>"; };
+		A31A6FD01845FC6900D63C56 /* UIPickerView+SIABlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPickerView+SIABlocks.m"; sourceTree = "<group>"; };
+		A31A6FD11845FC6900D63C56 /* UITextField+SIABlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+SIABlocks.h"; sourceTree = "<group>"; };
+		A31A6FD21845FC6900D63C56 /* UITextField+SIABlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+SIABlocks.m"; sourceTree = "<group>"; };
+		A34DD3F717966C690049658C /* SIABlockAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIABlockAction.h; sourceTree = "<group>"; };
+		A34DD3F817966C690049658C /* SIABlockAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIABlockAction.m; sourceTree = "<group>"; };
+		A34DD3F917966C690049658C /* SIABlockProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIABlockProtocol.h; sourceTree = "<group>"; };
+		A34DD3FA17966C690049658C /* SIABlockProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIABlockProtocol.m; sourceTree = "<group>"; };
+		A34DD3FB17966C690049658C /* SIAControlAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAControlAction.h; sourceTree = "<group>"; };
+		A34DD3FC17966C690049658C /* SIAControlAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAControlAction.m; sourceTree = "<group>"; };
+		A34DD3FD17966C690049658C /* SIAExpandableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAExpandableObject.h; sourceTree = "<group>"; };
+		A34DD3FE17966C690049658C /* SIAExpandableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAExpandableObject.m; sourceTree = "<group>"; };
+		A34DD3FF17966C690049658C /* SIAGestureAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAGestureAction.h; sourceTree = "<group>"; };
+		A34DD40017966C690049658C /* SIAGestureAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAGestureAction.m; sourceTree = "<group>"; };
+		A34DD40117966C690049658C /* SIAObserverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAObserverAction.h; sourceTree = "<group>"; };
+		A34DD40217966C690049658C /* SIAObserverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAObserverAction.m; sourceTree = "<group>"; };
+		A34DD40317966C690049658C /* SIATimerAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIATimerAction.h; sourceTree = "<group>"; };
+		A34DD40417966C690049658C /* SIATimerAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIATimerAction.m; sourceTree = "<group>"; };
+		A34DD40617966C690049658C /* SIAFTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAFTP.h; sourceTree = "<group>"; };
+		A34DD40717966C690049658C /* SIAFTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAFTPClient.h; sourceTree = "<group>"; };
+		A34DD40817966C690049658C /* SIAFTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAFTPClient.m; sourceTree = "<group>"; };
+		A34DD40917966C690049658C /* SIAFTPCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAFTPCommand.h; sourceTree = "<group>"; };
+		A34DD40A17966C690049658C /* SIAFTPCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAFTPCommand.m; sourceTree = "<group>"; };
+		A34DD40B17966C690049658C /* SIAFTPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAFTPError.h; sourceTree = "<group>"; };
+		A34DD40C17966C690049658C /* SIAFTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAFTPOperation.h; sourceTree = "<group>"; };
+		A34DD40D17966C690049658C /* SIAFTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAFTPOperation.m; sourceTree = "<group>"; };
+		A34DD40E17966C690049658C /* SIAFTPReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAFTPReply.h; sourceTree = "<group>"; };
+		A34DD40F17966C690049658C /* SIAFTPReply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAFTPReply.m; sourceTree = "<group>"; };
+		A34DD41117966C690049658C /* SIABaseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIABaseOperation.h; sourceTree = "<group>"; };
+		A34DD41217966C690049658C /* SIABaseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIABaseOperation.m; sourceTree = "<group>"; };
+		A34DD41317966C690049658C /* SIABlockOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIABlockOperation.h; sourceTree = "<group>"; };
+		A34DD41417966C690049658C /* SIABlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIABlockOperation.m; sourceTree = "<group>"; };
+		A34DD41517966C690049658C /* SIAConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAConnectionOperation.h; sourceTree = "<group>"; };
+		A34DD41617966C690049658C /* SIAConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAConnectionOperation.m; sourceTree = "<group>"; };
+		A34DD41717966C690049658C /* SIAOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAOperationQueue.h; sourceTree = "<group>"; };
+		A34DD41817966C690049658C /* SIAOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAOperationQueue.m; sourceTree = "<group>"; };
+		A34DD42817966D570049658C /* SIABlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIABlocks.h; sourceTree = "<group>"; };
+		A34DD42917966D9E0049658C /* SIAOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIAOperation.h; sourceTree = "<group>"; };
+		A34DD42B17966EAD0049658C /* NSArray+SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SIATools.h"; sourceTree = "<group>"; };
+		A34DD42C17966EAD0049658C /* NSArray+SIATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SIATools.m"; sourceTree = "<group>"; };
+		A34DD42D17966EAD0049658C /* NSBundle+SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+SIATools.h"; sourceTree = "<group>"; };
+		A34DD42E17966EAD0049658C /* NSBundle+SIATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+SIATools.m"; sourceTree = "<group>"; };
+		A34DD42F17966EAD0049658C /* NSCoder+SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+SIATools.h"; sourceTree = "<group>"; };
+		A34DD43017966EAD0049658C /* NSCoder+SIATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+SIATools.m"; sourceTree = "<group>"; };
+		A34DD43117966EAD0049658C /* NSData+SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SIATools.h"; sourceTree = "<group>"; };
+		A34DD43217966EAD0049658C /* NSData+SIATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SIATools.m"; sourceTree = "<group>"; };
+		A34DD43317966EAD0049658C /* NSDate+SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SIATools.h"; sourceTree = "<group>"; };
+		A34DD43417966EAD0049658C /* NSDate+SIATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SIATools.m"; sourceTree = "<group>"; };
+		A34DD43517966EAD0049658C /* NSEnumerator+SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+SIATools.h"; sourceTree = "<group>"; };
+		A34DD43617966EAD0049658C /* NSEnumerator+SIATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEnumerator+SIATools.m"; sourceTree = "<group>"; };
+		A34DD43717966EAD0049658C /* NSObject+SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SIATools.h"; sourceTree = "<group>"; };
+		A34DD43817966EAD0049658C /* NSObject+SIATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SIATools.m"; sourceTree = "<group>"; };
+		A34DD43917966EAD0049658C /* NSStream+SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStream+SIATools.h"; sourceTree = "<group>"; };
+		A34DD43A17966EAD0049658C /* NSStream+SIATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStream+SIATools.m"; sourceTree = "<group>"; };
+		A34DD43B17966EAD0049658C /* NSString+SIAHalfwidth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SIAHalfwidth.h"; sourceTree = "<group>"; };
+		A34DD43C17966EAD0049658C /* NSString+SIAHalfwidth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SIAHalfwidth.m"; sourceTree = "<group>"; };
+		A34DD43D17966EAD0049658C /* NSString+SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SIATools.h"; sourceTree = "<group>"; };
+		A34DD43E17966EAD0049658C /* NSString+SIATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SIATools.m"; sourceTree = "<group>"; };
+		A34DD43F17966EAD0049658C /* NSURL+SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+SIATools.h"; sourceTree = "<group>"; };
+		A34DD44017966EAD0049658C /* NSURL+SIATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+SIATools.m"; sourceTree = "<group>"; };
+		A34DD44117966EAD0049658C /* UIColor+SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SIATools.h"; sourceTree = "<group>"; };
+		A34DD44217966EAD0049658C /* UIColor+SIATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SIATools.m"; sourceTree = "<group>"; };
+		A34DD44317966EAD0049658C /* UIImage+SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SIATools.h"; sourceTree = "<group>"; };
+		A34DD44417966EAD0049658C /* UIImage+SIATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SIATools.m"; sourceTree = "<group>"; };
+		A34DD45217966EB80049658C /* SIAExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIAExtensions.h; sourceTree = "<group>"; };
+		A34DD454179672080049658C /* SIAAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAAlertView.h; sourceTree = "<group>"; };
+		A34DD455179672080049658C /* SIAAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAAlertView.m; sourceTree = "<group>"; };
+		A34DD456179672080049658C /* SIAImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAImageButton.h; sourceTree = "<group>"; };
+		A34DD457179672080049658C /* SIAImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAImageButton.m; sourceTree = "<group>"; };
+		A34DD458179672080049658C /* SIAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAImageView.h; sourceTree = "<group>"; };
+		A34DD459179672080049658C /* SIAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAImageView.m; sourceTree = "<group>"; };
+		A34DD45A179672080049658C /* SIAOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAOverlayView.h; sourceTree = "<group>"; };
+		A34DD45B179672080049658C /* SIAOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAOverlayView.m; sourceTree = "<group>"; };
+		A34DD45C179672080049658C /* SIAPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAPageView.h; sourceTree = "<group>"; };
+		A34DD45D179672080049658C /* SIAPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAPageView.m; sourceTree = "<group>"; };
+		A34DD4631796721E0049658C /* SIAUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIAUI.h; sourceTree = "<group>"; };
+		A36191981716B76900650031 /* SIAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIAAppDelegate.h; path = SIATools/SIAAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		A36191991716B76900650031 /* SIAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIAAppDelegate.m; path = SIATools/SIAAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		A36191A21716B7CA00650031 /* SIATools-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SIATools-Info.plist"; path = "SIATools/SIATools-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A36191A41716B7DA00650031 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SIATools/main.m; sourceTree = SOURCE_ROOT; };
+		A36191A51716B7DA00650031 /* SIATools-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SIATools-Prefix.pch"; path = "SIATools/SIATools-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		A36191A71716B7FA00650031 /* SIAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIAViewController.h; path = SIATools/SIAViewController.h; sourceTree = SOURCE_ROOT; };
+		A36191A81716B7FA00650031 /* SIAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIAViewController.m; path = SIATools/SIAViewController.m; sourceTree = SOURCE_ROOT; };
+		A36191A91716B7FA00650031 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestClass.h; path = SIATools/TestClass.h; sourceTree = SOURCE_ROOT; };
+		A36191AA1716B7FA00650031 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestClass.m; path = SIATools/TestClass.m; sourceTree = SOURCE_ROOT; };
+		A36191AD1716B80600650031 /* SIADateStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIADateStringViewController.h; path = SIATools/SIADateStringViewController.h; sourceTree = SOURCE_ROOT; };
+		A36191AE1716B80600650031 /* SIADateStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIADateStringViewController.m; path = SIATools/SIADateStringViewController.m; sourceTree = SOURCE_ROOT; };
+		A36192971716BB4100650031 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = SIATools/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
+		A36192991716BB4700650031 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = SIATools/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		A361929B1716BB5A00650031 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A3878405154955A500E16091 /* SIATools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIATools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3878409154955A500E16091 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A387840B154955A500E16091 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A387840D154955A500E16091 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A3CB988E16142D8F005DDA9C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A3DC0932182A220700A1CB58 /* NSDateFormatter+SIATools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+SIATools.h"; sourceTree = "<group>"; };
+		A3DC0933182A220800A1CB58 /* NSDateFormatter+SIATools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+SIATools.m"; sourceTree = "<group>"; };
+		A3F2CF6D16B7CC3E0007822E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3878402154955A500E16091 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F2CF6E16B7CC3E0007822E /* Security.framework in Frameworks */,
+				A30DE98B161D63F0001B8934 /* QuartzCore.framework in Frameworks */,
+				A3CB988F16142D8F005DDA9C /* SystemConfiguration.framework in Frameworks */,
+				A387840A154955A500E16091 /* UIKit.framework in Frameworks */,
+				A387840C154955A500E16091 /* Foundation.framework in Frameworks */,
+				A387840E154955A500E16091 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A303BC7F169D050100123CDE /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A303BC80169D050100123CDE /* Reachability.h */,
+				A303BC81169D050100123CDE /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		A316269A1733DA2B0058CAFE /* SIATools */ = {
+			isa = PBXGroup;
+			children = (
+				A34DD3F617966C690049658C /* Blocks */,
+				A34DD42A17966EAD0049658C /* Extensions */,
+				A34DD40517966C690049658C /* FTP */,
+				A34DD41017966C690049658C /* Operation */,
+				A34DD453179672080049658C /* UI */,
+				A31626B51733DA2B0058CAFE /* SIABase64.h */,
+				A31626B61733DA2B0058CAFE /* SIABase64.m */,
+				A31626C31733DA2B0058CAFE /* SIADescriptionBuilder.h */,
+				A31626C41733DA2B0058CAFE /* SIADescriptionBuilder.m */,
+				A31626C71733DA2B0058CAFE /* SIAFileCache.h */,
+				A31626C81733DA2B0058CAFE /* SIAFileCache.m */,
+				A31626D31733DA2B0058CAFE /* SIAGeometry.h */,
+				A31626D41733DA2B0058CAFE /* SIAGeometry.m */,
+				A31626D51733DA2B0058CAFE /* SIAHash.h */,
+				A31626D61733DA2B0058CAFE /* SIAHash.m */,
+				A31626D71733DA2B0058CAFE /* SIAID.h */,
+				A31626D81733DA2B0058CAFE /* SIAID.m */,
+				A31626DB1733DA2B0058CAFE /* SIAImageCache.h */,
+				A31626DC1733DA2B0058CAFE /* SIAImageCache.m */,
+				A31626DF1733DA2B0058CAFE /* SIAKeyboardAdjuster.h */,
+				A31626E01733DA2B0058CAFE /* SIAKeyboardAdjuster.m */,
+				A31626E31733DA2B0058CAFE /* SIALogger.h */,
+				A31626E41733DA2B0058CAFE /* SIALogger.m */,
+				A31626EB1733DA2B0058CAFE /* SIAPathTools.h */,
+				A31626EC1733DA2B0058CAFE /* SIAPathTools.m */,
+				A31626ED1733DA2B0058CAFE /* SIATools.h */,
+				A31626EE1733DA2B0058CAFE /* SIAToolsLogger.h */,
+				A31626EF1733DA2B0058CAFE /* SIAToolsLogger.m */,
+				A31626F01733DA2B0058CAFE /* SIAWeakReference.h */,
+				A31626F11733DA2B0058CAFE /* SIAWeakReference.m */,
+			);
+			name = SIATools;
+			path = SIATools/SIATools;
+			sourceTree = SOURCE_ROOT;
+		};
+		A34DD3F617966C690049658C /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				A34DD42817966D570049658C /* SIABlocks.h */,
+				A34DD3F717966C690049658C /* SIABlockAction.h */,
+				A34DD3F817966C690049658C /* SIABlockAction.m */,
+				A34DD3F917966C690049658C /* SIABlockProtocol.h */,
+				A34DD3FA17966C690049658C /* SIABlockProtocol.m */,
+				A34DD3FB17966C690049658C /* SIAControlAction.h */,
+				A34DD3FC17966C690049658C /* SIAControlAction.m */,
+				A34DD3FD17966C690049658C /* SIAExpandableObject.h */,
+				A34DD3FE17966C690049658C /* SIAExpandableObject.m */,
+				A34DD3FF17966C690049658C /* SIAGestureAction.h */,
+				A34DD40017966C690049658C /* SIAGestureAction.m */,
+				A34DD40117966C690049658C /* SIAObserverAction.h */,
+				A34DD40217966C690049658C /* SIAObserverAction.m */,
+				A34DD40317966C690049658C /* SIATimerAction.h */,
+				A34DD40417966C690049658C /* SIATimerAction.m */,
+				A31A6FCB1845FC6900D63C56 /* UIActionSheet+SIABlocks.h */,
+				A31A6FCC1845FC6900D63C56 /* UIActionSheet+SIABlocks.m */,
+				A31A6FCD1845FC6900D63C56 /* UIAlertView+SIABlocks.h */,
+				A31A6FCE1845FC6900D63C56 /* UIAlertView+SIABlocks.m */,
+				A31A6FCF1845FC6900D63C56 /* UIPickerView+SIABlocks.h */,
+				A31A6FD01845FC6900D63C56 /* UIPickerView+SIABlocks.m */,
+				A31A6FD11845FC6900D63C56 /* UITextField+SIABlocks.h */,
+				A31A6FD21845FC6900D63C56 /* UITextField+SIABlocks.m */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		A34DD40517966C690049658C /* FTP */ = {
+			isa = PBXGroup;
+			children = (
+				A34DD40617966C690049658C /* SIAFTP.h */,
+				A34DD40717966C690049658C /* SIAFTPClient.h */,
+				A34DD40817966C690049658C /* SIAFTPClient.m */,
+				A34DD40917966C690049658C /* SIAFTPCommand.h */,
+				A34DD40A17966C690049658C /* SIAFTPCommand.m */,
+				A34DD40B17966C690049658C /* SIAFTPError.h */,
+				A34DD40C17966C690049658C /* SIAFTPOperation.h */,
+				A34DD40D17966C690049658C /* SIAFTPOperation.m */,
+				A34DD40E17966C690049658C /* SIAFTPReply.h */,
+				A34DD40F17966C690049658C /* SIAFTPReply.m */,
+			);
+			path = FTP;
+			sourceTree = "<group>";
+		};
+		A34DD41017966C690049658C /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				A34DD42917966D9E0049658C /* SIAOperation.h */,
+				A34DD41117966C690049658C /* SIABaseOperation.h */,
+				A34DD41217966C690049658C /* SIABaseOperation.m */,
+				A34DD41317966C690049658C /* SIABlockOperation.h */,
+				A34DD41417966C690049658C /* SIABlockOperation.m */,
+				A34DD41517966C690049658C /* SIAConnectionOperation.h */,
+				A34DD41617966C690049658C /* SIAConnectionOperation.m */,
+				A34DD41717966C690049658C /* SIAOperationQueue.h */,
+				A34DD41817966C690049658C /* SIAOperationQueue.m */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		A34DD42A17966EAD0049658C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A34DD45217966EB80049658C /* SIAExtensions.h */,
+				A34DD42B17966EAD0049658C /* NSArray+SIATools.h */,
+				A34DD42C17966EAD0049658C /* NSArray+SIATools.m */,
+				A34DD42D17966EAD0049658C /* NSBundle+SIATools.h */,
+				A34DD42E17966EAD0049658C /* NSBundle+SIATools.m */,
+				A34DD42F17966EAD0049658C /* NSCoder+SIATools.h */,
+				A34DD43017966EAD0049658C /* NSCoder+SIATools.m */,
+				A34DD43117966EAD0049658C /* NSData+SIATools.h */,
+				A34DD43217966EAD0049658C /* NSData+SIATools.m */,
+				A34DD43317966EAD0049658C /* NSDate+SIATools.h */,
+				A34DD43417966EAD0049658C /* NSDate+SIATools.m */,
+				A3DC0932182A220700A1CB58 /* NSDateFormatter+SIATools.h */,
+				A3DC0933182A220800A1CB58 /* NSDateFormatter+SIATools.m */,
+				A34DD43517966EAD0049658C /* NSEnumerator+SIATools.h */,
+				A34DD43617966EAD0049658C /* NSEnumerator+SIATools.m */,
+				A34DD43717966EAD0049658C /* NSObject+SIATools.h */,
+				A34DD43817966EAD0049658C /* NSObject+SIATools.m */,
+				A34DD43917966EAD0049658C /* NSStream+SIATools.h */,
+				A34DD43A17966EAD0049658C /* NSStream+SIATools.m */,
+				A34DD43B17966EAD0049658C /* NSString+SIAHalfwidth.h */,
+				A34DD43C17966EAD0049658C /* NSString+SIAHalfwidth.m */,
+				A34DD43D17966EAD0049658C /* NSString+SIATools.h */,
+				A34DD43E17966EAD0049658C /* NSString+SIATools.m */,
+				A34DD43F17966EAD0049658C /* NSURL+SIATools.h */,
+				A34DD44017966EAD0049658C /* NSURL+SIATools.m */,
+				A34DD44117966EAD0049658C /* UIColor+SIATools.h */,
+				A34DD44217966EAD0049658C /* UIColor+SIATools.m */,
+				A34DD44317966EAD0049658C /* UIImage+SIATools.h */,
+				A34DD44417966EAD0049658C /* UIImage+SIATools.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A34DD453179672080049658C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A34DD4631796721E0049658C /* SIAUI.h */,
+				A34DD454179672080049658C /* SIAAlertView.h */,
+				A34DD455179672080049658C /* SIAAlertView.m */,
+				A34DD456179672080049658C /* SIAImageButton.h */,
+				A34DD457179672080049658C /* SIAImageButton.m */,
+				A34DD458179672080049658C /* SIAImageView.h */,
+				A34DD459179672080049658C /* SIAImageView.m */,
+				A34DD45A179672080049658C /* SIAOverlayView.h */,
+				A34DD45B179672080049658C /* SIAOverlayView.m */,
+				A34DD45C179672080049658C /* SIAPageView.h */,
+				A34DD45D179672080049658C /* SIAPageView.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A38783FA154955A500E16091 = {
+			isa = PBXGroup;
+			children = (
+				A361929B1716BB5A00650031 /* Default-568h@2x.png */,
+				A387840F154955A500E16091 /* SIATools */,
+				A3878408154955A500E16091 /* Frameworks */,
+				A303BC7F169D050100123CDE /* Reachability */,
+				A3878406154955A500E16091 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3878406154955A500E16091 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3878405154955A500E16091 /* SIATools.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3878408154955A500E16091 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3F2CF6D16B7CC3E0007822E /* Security.framework */,
+				A30DE98A161D63F0001B8934 /* QuartzCore.framework */,
+				A3CB988E16142D8F005DDA9C /* SystemConfiguration.framework */,
+				A3878409154955A500E16091 /* UIKit.framework */,
+				A387840B154955A500E16091 /* Foundation.framework */,
+				A387840D154955A500E16091 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A387840F154955A500E16091 /* SIATools */ = {
+			isa = PBXGroup;
+			children = (
+				A316269A1733DA2B0058CAFE /* SIATools */,
+				A36191981716B76900650031 /* SIAAppDelegate.h */,
+				A36191991716B76900650031 /* SIAAppDelegate.m */,
+				A36192971716BB4100650031 /* MainStoryboard.storyboard */,
+				A36191A71716B7FA00650031 /* SIAViewController.h */,
+				A36191A81716B7FA00650031 /* SIAViewController.m */,
+				A36191A91716B7FA00650031 /* TestClass.h */,
+				A36191AA1716B7FA00650031 /* TestClass.m */,
+				A36191AD1716B80600650031 /* SIADateStringViewController.h */,
+				A36191AE1716B80600650031 /* SIADateStringViewController.m */,
+				A3878410154955A500E16091 /* Supporting Files */,
+			);
+			name = SIATools;
+			path = SITools;
+			sourceTree = "<group>";
+		};
+		A3878410154955A500E16091 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A36191A21716B7CA00650031 /* SIATools-Info.plist */,
+				A36192991716BB4700650031 /* InfoPlist.strings */,
+				A36191A41716B7DA00650031 /* main.m */,
+				A36191A51716B7DA00650031 /* SIATools-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3878404154955A500E16091 /* SIATools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3878423154955A600E16091 /* Build configuration list for PBXNativeTarget "SIATools" */;
+			buildPhases = (
+				A3878401154955A500E16091 /* Sources */,
+				A3878402154955A500E16091 /* Frameworks */,
+				A3878403154955A500E16091 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SIATools;
+			productName = SITools;
+			productReference = A3878405154955A500E16091 /* SIATools.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A38783FC154955A500E16091 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SIA;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "SI Agency Inc";
+			};
+			buildConfigurationList = A38783FF154955A500E16091 /* Build configuration list for PBXProject "SIATools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A38783FA154955A500E16091;
+			productRefGroup = A3878406154955A500E16091 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3878404154955A500E16091 /* SIATools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3878403154955A500E16091 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A36192981716BB4100650031 /* MainStoryboard.storyboard in Resources */,
+				A361929A1716BB4700650031 /* InfoPlist.strings in Resources */,
+				A361929C1716BB5B00650031 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3878401154955A500E16091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A303BC82169D050100123CDE /* Reachability.m in Sources */,
+				A361919A1716B76900650031 /* SIAAppDelegate.m in Sources */,
+				A36191A61716B7DA00650031 /* main.m in Sources */,
+				A36191AB1716B7FA00650031 /* SIAViewController.m in Sources */,
+				A36191AC1716B7FA00650031 /* TestClass.m in Sources */,
+				A36191AF1716B80600650031 /* SIADateStringViewController.m in Sources */,
+				A31627031733DA2B0058CAFE /* SIABase64.m in Sources */,
+				A31A6FD61845FC6900D63C56 /* UITextField+SIABlocks.m in Sources */,
+				A316270A1733DA2B0058CAFE /* SIADescriptionBuilder.m in Sources */,
+				A316270C1733DA2B0058CAFE /* SIAFileCache.m in Sources */,
+				A31627111733DA2B0058CAFE /* SIAGeometry.m in Sources */,
+				A31627121733DA2B0058CAFE /* SIAHash.m in Sources */,
+				A31627131733DA2B0058CAFE /* SIAID.m in Sources */,
+				A31627151733DA2B0058CAFE /* SIAImageCache.m in Sources */,
+				A31627171733DA2B0058CAFE /* SIAKeyboardAdjuster.m in Sources */,
+				A31627191733DA2B0058CAFE /* SIALogger.m in Sources */,
+				A316271D1733DA2B0058CAFE /* SIAPathTools.m in Sources */,
+				A316271E1733DA2B0058CAFE /* SIAToolsLogger.m in Sources */,
+				A316271F1733DA2B0058CAFE /* SIAWeakReference.m in Sources */,
+				A34DD41917966C690049658C /* SIABlockAction.m in Sources */,
+				A34DD41A17966C690049658C /* SIABlockProtocol.m in Sources */,
+				A34DD41B17966C690049658C /* SIAControlAction.m in Sources */,
+				A34DD41C17966C690049658C /* SIAExpandableObject.m in Sources */,
+				A34DD41D17966C690049658C /* SIAGestureAction.m in Sources */,
+				A34DD41E17966C690049658C /* SIAObserverAction.m in Sources */,
+				A34DD41F17966C690049658C /* SIATimerAction.m in Sources */,
+				A34DD42017966C690049658C /* SIAFTPClient.m in Sources */,
+				A34DD42117966C690049658C /* SIAFTPCommand.m in Sources */,
+				A34DD42217966C690049658C /* SIAFTPOperation.m in Sources */,
+				A34DD42317966C690049658C /* SIAFTPReply.m in Sources */,
+				A31A6FD51845FC6900D63C56 /* UIPickerView+SIABlocks.m in Sources */,
+				A34DD42417966C690049658C /* SIABaseOperation.m in Sources */,
+				A34DD42517966C690049658C /* SIABlockOperation.m in Sources */,
+				A34DD42617966C690049658C /* SIAConnectionOperation.m in Sources */,
+				A34DD42717966C690049658C /* SIAOperationQueue.m in Sources */,
+				A34DD44517966EAD0049658C /* NSArray+SIATools.m in Sources */,
+				A31A6FD31845FC6900D63C56 /* UIActionSheet+SIABlocks.m in Sources */,
+				A34DD44617966EAD0049658C /* NSBundle+SIATools.m in Sources */,
+				A34DD44717966EAD0049658C /* NSCoder+SIATools.m in Sources */,
+				A34DD44817966EAD0049658C /* NSData+SIATools.m in Sources */,
+				A34DD44917966EAD0049658C /* NSDate+SIATools.m in Sources */,
+				A34DD44A17966EAD0049658C /* NSEnumerator+SIATools.m in Sources */,
+				A34DD44B17966EAD0049658C /* NSObject+SIATools.m in Sources */,
+				A34DD44C17966EAD0049658C /* NSStream+SIATools.m in Sources */,
+				A34DD44D17966EAD0049658C /* NSString+SIAHalfwidth.m in Sources */,
+				A34DD44E17966EAD0049658C /* NSString+SIATools.m in Sources */,
+				A34DD44F17966EAD0049658C /* NSURL+SIATools.m in Sources */,
+				A34DD45017966EAD0049658C /* UIColor+SIATools.m in Sources */,
+				A34DD45117966EAD0049658C /* UIImage+SIATools.m in Sources */,
+				A34DD45E179672080049658C /* SIAAlertView.m in Sources */,
+				A34DD45F179672080049658C /* SIAImageButton.m in Sources */,
+				A34DD460179672080049658C /* SIAImageView.m in Sources */,
+				A34DD461179672080049658C /* SIAOverlayView.m in Sources */,
+				A34DD462179672080049658C /* SIAPageView.m in Sources */,
+				A3DC0934182A220800A1CB58 /* NSDateFormatter+SIATools.m in Sources */,
+				A31A6FD41845FC6900D63C56 /* UIAlertView+SIABlocks.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A3878421154955A600E16091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"SIALOGGER_LEVEL=9",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A3878422154955A600E16091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "SIALOGGER_LEVEL=5";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3878424154955A600E16091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SIATools/SIATools-Prefix.pch";
+				INFOPLIST_FILE = "SIATools/SIATools-Info.plist";
+				PRODUCT_NAME = SIATools;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A3878425154955A600E16091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SIATools/SIATools-Prefix.pch";
+				INFOPLIST_FILE = "SIATools/SIATools-Info.plist";
+				PRODUCT_NAME = SIATools;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A38783FF154955A500E16091 /* Build configuration list for PBXProject "SIATools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3878421154955A600E16091 /* Debug */,
+				A3878422154955A600E16091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3878423154955A600E16091 /* Build configuration list for PBXNativeTarget "SIATools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3878424154955A600E16091 /* Debug */,
+				A3878425154955A600E16091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A38783FC154955A500E16091 /* Project object */;
+}
