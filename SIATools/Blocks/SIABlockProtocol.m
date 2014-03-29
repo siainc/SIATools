@@ -113,7 +113,7 @@
 
 @end
 
-@implementation NSObject (NSObjectSIABlockProtocolExtensions)
+@implementation NSObject (SIABlocksProtocol)
 
 - (SIABlockProtocol *)sia_blockProtocolForProtocol:(Protocol *)protocol
 {

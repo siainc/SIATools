@@ -9,15 +9,15 @@
 #ifndef SIATools_SIABlocks_h
 #define SIATools_SIABlocks_h
 
-#import "SIABlockAction.h"
+#import "NSObject+SIABlocksKVO.h"
+#import "NSObject+SIABlocksTargetAction.h"
+#import "NSTimer+SIABlocks.h"
 #import "SIABlockProtocol.h"
-#import "SIAControlAction.h"
 #import "SIAExpandableObject.h"
-#import "SIAObserverAction.h"
-#import "SIAGestureAction.h"
-#import "SIATimerAction.h"
 #import "UIActionSheet+SIABlocks.h"
 #import "UIAlertView+SIABlocks.h"
+#import "UIControl+SIABlocks.h"
+#import "UIGestureRecognizer+SIABlocks.h"
 #import "UINavigationBar+SIABlocks.h"
 #import "UIPickerView+SIABlocks.h"
 #import "UISearchBar+SIABlocks.h"

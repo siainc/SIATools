@@ -20,7 +20,7 @@
 
 @end
 
-@interface NSObject (NSObjectSIABlockProtocolExtensions)
+@interface NSObject (SIABlocksProtocol)
 
 - (SIABlockProtocol *)sia_blockProtocolForProtocol:(Protocol *)protocol;
 - (SIABlockProtocol *)sia_blockDelegate;

@@ -1,12 +1,12 @@
 //
-//  SIABlockAction.m
+//  NSObject+SIABlocksTargetAction.m
 //  SIATools
 //
 //  Created by KUROSAKI Ryota on 2013/03/08.
 //  Copyright (c) 2013-2014 SI Agency Inc. All rights reserved.
 //
 
-#import "SIABlockAction.h"
+#import "NSObject+SIABlocksTargetAction.h"
 
 #import "NSObject+SIATools.h"
 
@@ -28,7 +28,7 @@
 
 @end
 
-@implementation NSObject (NSObjectSIABlockActionExtensions)
+@implementation NSObject (SIABlocksTargetAction)
 
 - (NSMutableArray *)sia_blockActions
 {

@@ -12,13 +12,13 @@
 		A387840C154955A500E16091 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A387840B154955A500E16091 /* Foundation.framework */; };
 		A387840E154955A500E16091 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A387840D154955A500E16091 /* CoreGraphics.framework */; };
 		A3CB988F16142D8F005DDA9C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CB988E16142D8F005DDA9C /* SystemConfiguration.framework */; };
-		A3CFB38118E15D14005F2302 /* SIABlockAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB32218E15D14005F2302 /* SIABlockAction.m */; };
+		A3CFB38118E15D14005F2302 /* NSObject+SIABlocksTargetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB32218E15D14005F2302 /* NSObject+SIABlocksTargetAction.m */; };
 		A3CFB38218E15D14005F2302 /* SIABlockProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB32418E15D14005F2302 /* SIABlockProtocol.m */; };
-		A3CFB38318E15D14005F2302 /* SIAControlAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB32718E15D14005F2302 /* SIAControlAction.m */; };
+		A3CFB38318E15D14005F2302 /* UIControl+SIABlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB32718E15D14005F2302 /* UIControl+SIABlocks.m */; };
 		A3CFB38418E15D14005F2302 /* SIAExpandableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB32918E15D14005F2302 /* SIAExpandableObject.m */; };
-		A3CFB38518E15D14005F2302 /* SIAGestureAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB32B18E15D14005F2302 /* SIAGestureAction.m */; };
-		A3CFB38618E15D14005F2302 /* SIAObserverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB32D18E15D14005F2302 /* SIAObserverAction.m */; };
-		A3CFB38718E15D14005F2302 /* SIATimerAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB32F18E15D14005F2302 /* SIATimerAction.m */; };
+		A3CFB38518E15D14005F2302 /* UIGestureRecognizer+SIABlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB32B18E15D14005F2302 /* UIGestureRecognizer+SIABlocks.m */; };
+		A3CFB38618E15D14005F2302 /* NSObject+SIABlocksKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB32D18E15D14005F2302 /* NSObject+SIABlocksKVO.m */; };
+		A3CFB38718E15D14005F2302 /* NSTimer+SIABlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB32F18E15D14005F2302 /* NSTimer+SIABlocks.m */; };
 		A3CFB38818E15D14005F2302 /* UIActionSheet+SIABlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB33118E15D14005F2302 /* UIActionSheet+SIABlocks.m */; };
 		A3CFB38918E15D14005F2302 /* UIAlertView+SIABlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB33318E15D14005F2302 /* UIAlertView+SIABlocks.m */; };
 		A3CFB38A18E15D14005F2302 /* UINavigationBar+SIABlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFB33518E15D14005F2302 /* UINavigationBar+SIABlocks.m */; };
@@ -74,21 +74,21 @@
 		A387840B154955A500E16091 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A387840D154955A500E16091 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A3CB988E16142D8F005DDA9C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		A3CFB32118E15D14005F2302 /* SIABlockAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIABlockAction.h; sourceTree = "<group>"; };
-		A3CFB32218E15D14005F2302 /* SIABlockAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIABlockAction.m; sourceTree = "<group>"; };
+		A3CFB32118E15D14005F2302 /* NSObject+SIABlocksTargetAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SIABlocksTargetAction.h"; sourceTree = "<group>"; };
+		A3CFB32218E15D14005F2302 /* NSObject+SIABlocksTargetAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SIABlocksTargetAction.m"; sourceTree = "<group>"; };
 		A3CFB32318E15D14005F2302 /* SIABlockProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIABlockProtocol.h; sourceTree = "<group>"; };
 		A3CFB32418E15D14005F2302 /* SIABlockProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIABlockProtocol.m; sourceTree = "<group>"; };
 		A3CFB32518E15D14005F2302 /* SIABlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIABlocks.h; sourceTree = "<group>"; };
-		A3CFB32618E15D14005F2302 /* SIAControlAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAControlAction.h; sourceTree = "<group>"; };
-		A3CFB32718E15D14005F2302 /* SIAControlAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAControlAction.m; sourceTree = "<group>"; };
+		A3CFB32618E15D14005F2302 /* UIControl+SIABlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+SIABlocks.h"; sourceTree = "<group>"; };
+		A3CFB32718E15D14005F2302 /* UIControl+SIABlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+SIABlocks.m"; sourceTree = "<group>"; };
 		A3CFB32818E15D14005F2302 /* SIAExpandableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAExpandableObject.h; sourceTree = "<group>"; };
 		A3CFB32918E15D14005F2302 /* SIAExpandableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAExpandableObject.m; sourceTree = "<group>"; };
-		A3CFB32A18E15D14005F2302 /* SIAGestureAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAGestureAction.h; sourceTree = "<group>"; };
-		A3CFB32B18E15D14005F2302 /* SIAGestureAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAGestureAction.m; sourceTree = "<group>"; };
-		A3CFB32C18E15D14005F2302 /* SIAObserverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAObserverAction.h; sourceTree = "<group>"; };
-		A3CFB32D18E15D14005F2302 /* SIAObserverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAObserverAction.m; sourceTree = "<group>"; };
-		A3CFB32E18E15D14005F2302 /* SIATimerAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIATimerAction.h; sourceTree = "<group>"; };
-		A3CFB32F18E15D14005F2302 /* SIATimerAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIATimerAction.m; sourceTree = "<group>"; };
+		A3CFB32A18E15D14005F2302 /* UIGestureRecognizer+SIABlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+SIABlocks.h"; sourceTree = "<group>"; };
+		A3CFB32B18E15D14005F2302 /* UIGestureRecognizer+SIABlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+SIABlocks.m"; sourceTree = "<group>"; };
+		A3CFB32C18E15D14005F2302 /* NSObject+SIABlocksKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SIABlocksKVO.h"; sourceTree = "<group>"; };
+		A3CFB32D18E15D14005F2302 /* NSObject+SIABlocksKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SIABlocksKVO.m"; sourceTree = "<group>"; };
+		A3CFB32E18E15D14005F2302 /* NSTimer+SIABlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+SIABlocks.h"; sourceTree = "<group>"; };
+		A3CFB32F18E15D14005F2302 /* NSTimer+SIABlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+SIABlocks.m"; sourceTree = "<group>"; };
 		A3CFB33018E15D14005F2302 /* UIActionSheet+SIABlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+SIABlocks.h"; sourceTree = "<group>"; };
 		A3CFB33118E15D14005F2302 /* UIActionSheet+SIABlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+SIABlocks.m"; sourceTree = "<group>"; };
 		A3CFB33218E15D14005F2302 /* UIAlertView+SIABlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+SIABlocks.h"; sourceTree = "<group>"; };
@@ -246,25 +246,25 @@
 		A3CFB32018E15D14005F2302 /* Blocks */ = {
 			isa = PBXGroup;
 			children = (
-				A3CFB32118E15D14005F2302 /* SIABlockAction.h */,
-				A3CFB32218E15D14005F2302 /* SIABlockAction.m */,
+				A3CFB32518E15D14005F2302 /* SIABlocks.h */,
+				A3CFB32C18E15D14005F2302 /* NSObject+SIABlocksKVO.h */,
+				A3CFB32D18E15D14005F2302 /* NSObject+SIABlocksKVO.m */,
+				A3CFB32118E15D14005F2302 /* NSObject+SIABlocksTargetAction.h */,
+				A3CFB32218E15D14005F2302 /* NSObject+SIABlocksTargetAction.m */,
+				A3CFB32E18E15D14005F2302 /* NSTimer+SIABlocks.h */,
+				A3CFB32F18E15D14005F2302 /* NSTimer+SIABlocks.m */,
 				A3CFB32318E15D14005F2302 /* SIABlockProtocol.h */,
 				A3CFB32418E15D14005F2302 /* SIABlockProtocol.m */,
-				A3CFB32518E15D14005F2302 /* SIABlocks.h */,
-				A3CFB32618E15D14005F2302 /* SIAControlAction.h */,
-				A3CFB32718E15D14005F2302 /* SIAControlAction.m */,
 				A3CFB32818E15D14005F2302 /* SIAExpandableObject.h */,
 				A3CFB32918E15D14005F2302 /* SIAExpandableObject.m */,
-				A3CFB32A18E15D14005F2302 /* SIAGestureAction.h */,
-				A3CFB32B18E15D14005F2302 /* SIAGestureAction.m */,
-				A3CFB32C18E15D14005F2302 /* SIAObserverAction.h */,
-				A3CFB32D18E15D14005F2302 /* SIAObserverAction.m */,
-				A3CFB32E18E15D14005F2302 /* SIATimerAction.h */,
-				A3CFB32F18E15D14005F2302 /* SIATimerAction.m */,
 				A3CFB33018E15D14005F2302 /* UIActionSheet+SIABlocks.h */,
 				A3CFB33118E15D14005F2302 /* UIActionSheet+SIABlocks.m */,
 				A3CFB33218E15D14005F2302 /* UIAlertView+SIABlocks.h */,
 				A3CFB33318E15D14005F2302 /* UIAlertView+SIABlocks.m */,
+				A3CFB32618E15D14005F2302 /* UIControl+SIABlocks.h */,
+				A3CFB32718E15D14005F2302 /* UIControl+SIABlocks.m */,
+				A3CFB32A18E15D14005F2302 /* UIGestureRecognizer+SIABlocks.h */,
+				A3CFB32B18E15D14005F2302 /* UIGestureRecognizer+SIABlocks.m */,
 				A3CFB33418E15D14005F2302 /* UINavigationBar+SIABlocks.h */,
 				A3CFB33518E15D14005F2302 /* UINavigationBar+SIABlocks.m */,
 				A3CFB33618E15D14005F2302 /* UIPickerView+SIABlocks.h */,
@@ -463,17 +463,17 @@
 				A3CFB3C018E15D39005F2302 /* main.m in Sources */,
 				A3CFB3A318E15D14005F2302 /* SIAWeakReference.m in Sources */,
 				A3CFB39B18E15D14005F2302 /* SIABase64.m in Sources */,
-				A3CFB38618E15D14005F2302 /* SIAObserverAction.m in Sources */,
+				A3CFB38618E15D14005F2302 /* NSObject+SIABlocksKVO.m in Sources */,
 				A3CFB3AB18E15D14005F2302 /* SIAOverlayView.m in Sources */,
 				A3CFB3A918E15D14005F2302 /* SIAConnectionOperation.m in Sources */,
 				A3CFB3A618E15D14005F2302 /* UIView+SIATools.m in Sources */,
 				A3CFB3A718E15D14005F2302 /* SIABaseOperation.m in Sources */,
 				A3CFB39E18E15D14005F2302 /* SIAHash.m in Sources */,
-				A3CFB38118E15D14005F2302 /* SIABlockAction.m in Sources */,
-				A3CFB38518E15D14005F2302 /* SIAGestureAction.m in Sources */,
+				A3CFB38118E15D14005F2302 /* NSObject+SIABlocksTargetAction.m in Sources */,
+				A3CFB38518E15D14005F2302 /* UIGestureRecognizer+SIABlocks.m in Sources */,
 				A3CFB3C518E15D39005F2302 /* SIAViewController.m in Sources */,
 				A3CFB38418E15D14005F2302 /* SIAExpandableObject.m in Sources */,
-				A3CFB38718E15D14005F2302 /* SIATimerAction.m in Sources */,
+				A3CFB38718E15D14005F2302 /* NSTimer+SIABlocks.m in Sources */,
 				A3CFB3A518E15D14005F2302 /* UIImage+SIATools.m in Sources */,
 				A3CFB38A18E15D14005F2302 /* UINavigationBar+SIABlocks.m in Sources */,
 				A3CFB39118E15D14005F2302 /* NSCoder+SIATools.m in Sources */,
@@ -481,7 +481,7 @@
 				A3CFB39518E15D14005F2302 /* NSEnumerator+SIATools.m in Sources */,
 				A3CFB38D18E15D14005F2302 /* UITextField+SIABlocks.m in Sources */,
 				A3CFB39318E15D14005F2302 /* NSDate+SIATools.m in Sources */,
-				A3CFB38318E15D14005F2302 /* SIAControlAction.m in Sources */,
+				A3CFB38318E15D14005F2302 /* UIControl+SIABlocks.m in Sources */,
 				A3CFB38918E15D14005F2302 /* UIAlertView+SIABlocks.m in Sources */,
 				A3CFB38218E15D14005F2302 /* SIABlockProtocol.m in Sources */,
 				A3CFB38F18E15D14005F2302 /* NSArray+SIATools.m in Sources */,

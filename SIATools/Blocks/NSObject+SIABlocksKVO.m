@@ -1,5 +1,5 @@
 //
-//  SIAObserverAction.m
+//  NSObject+SIABlocksKVO.m
 //  SIATools
 //
 //  Created by KUROSAKI Ryota on 2013/01/31.
@@ -10,18 +10,26 @@
 #error This code needs compiler option -fobjc_arc
 #endif
 
-#import "SIAObserverAction.h"
+#import "NSObject+SIABlocksKVO.h"
 
 #import <objc/runtime.h>
 #import "NSObject+SIATools.h"
 
 #define SIAObserverActionListKey "SIAObserverActionListKey"
 
+@interface SIAObserverAction : NSObject
+
+@property (nonatomic, copy, readonly) NSString *keyPath;
+@property (nonatomic, assign, readonly) NSKeyValueObservingOptions options;
+@property (nonatomic, weak, readonly) NSOperationQueue *queue;
+@property (nonatomic, copy, readonly) void (^block)(NSDictionary *change);
+
+@end
+
 @implementation SIAObserverAction
 
 - (id)initWithKeyPath:(NSString *)keyPath
               options:(NSKeyValueObservingOptions)options
-              context:(void *)context
                 queue:(NSOperationQueue *)queue
            usingBlock:(void (^)(NSDictionary *change))block
 {
@@ -29,7 +37,6 @@
     if (self) {
         _keyPath = keyPath;
         _options = options;
-        _context = context;
         _queue = queue;
         _block = block;
     }
@@ -53,7 +60,7 @@
 
 @end
 
-@implementation NSObject (NSObjectSIAObserverActionExtionsions)
+@implementation NSObject (SIABlocksKVO)
 
 - (NSMutableArray *)sia_observerActions
 {
@@ -70,25 +77,22 @@
 
 - (SIAObserverAction *)sia_addActionForKeyPath:(NSString *)keyPath
                                        options:(NSKeyValueObservingOptions)options
-                                       context:(void *)context
                                          queue:(NSOperationQueue *)queue
                                     usingBlock:(void (^)(NSDictionary *change))block
 {
     SIAObserverAction *action = [[SIAObserverAction alloc] initWithKeyPath:keyPath
                                                                    options:options
-                                                                   context:context
                                                                      queue:queue
                                                                 usingBlock:block];
-    [self addObserver:action forKeyPath:keyPath options:options context:context];
+    [self addObserver:action forKeyPath:keyPath options:options context:nil];
     [[self sia_observerActions] addObject:action];
     return action;
 }
 
 - (void)sia_removeAction:(SIAObserverAction *)action
               forKeyPath:(NSString *)keyPath
-                 context:(void *)context
 {
-    [self removeObserver:action forKeyPath:keyPath context:context];
+    [self removeObserver:action forKeyPath:keyPath context:nil];
     [[self sia_observerActions] removeObject:action];
 }
 

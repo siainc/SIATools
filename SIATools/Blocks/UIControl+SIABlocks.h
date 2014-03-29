@@ -1,5 +1,5 @@
 //
-//  SIAControlAction.h
+//  UIControl+SIABlocks.h
 //  SIATools
 //
 //  Created by KUROSAKI Ryota on 2013/02/12.
@@ -8,18 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SIAControlAction : NSObject
+@class SIAControlAction;
 
-@property (nonatomic, assign, readonly) UIControlEvents controlEvents;
-@property (nonatomic, weak, readonly) NSOperationQueue *queue;
-@property (nonatomic, copy, readonly) void (^block)(UIEvent *event);
-
-@end
-
-@interface UIControl (UIControlSIAControlActionExtensions)
+@interface UIControl (SIABlocks)
 
 - (SIAControlAction *)sia_addActionForControlEvents:(UIControlEvents)controlEvents
-                                              queue:(NSOperationQueue *)queue
                                          usingBlock:(void(^) (UIEvent * event))block;
 - (void)sia_removeAction:(SIAControlAction *)action forControlEvents:(UIControlEvents)controlEvents;
 

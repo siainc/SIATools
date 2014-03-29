@@ -1,5 +1,5 @@
 //
-//  SIABlockAction.h
+//  NSObject+SIABlocksTargetAction.h
 //  SIATools
 //
 //  Created by KUROSAKI Ryota on 2013/03/08.
@@ -11,12 +11,10 @@
 @interface SIABlockAction : SIAExpandableObject
 
 @property (nonatomic, assign) SEL selector;
-+ (SIABlockAction *)createSubclassInstanceForSelector:(SEL)selector;
-- (void)addMethodWithTypes:(const char *)types block:(id)block;
 
 @end
 
-@interface NSObject (NSObjectSIABlockActionExtensions)
+@interface NSObject (SIABlocksTargetAction)
 
 - (SIABlockAction *)sia_actionForSelector:(SEL)selector types:(const char *)types usingBlock:(id)block;
 - (void)sia_disposeAction:(SIABlockAction *)action;
