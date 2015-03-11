@@ -1,0 +1,8 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+target 'SIATools', :exclusive => true do
+  pod "SIATools", :path => "../"
+
+  
+end

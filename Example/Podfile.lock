@@ -1,0 +1,20 @@
+PODS:
+  - Reachability (3.2)
+  - SIAEnumerator (0.1.0)
+  - SIATools (0.2.0):
+    - Reachability (~> 3.0)
+    - SIAEnumerator (~> 0.1.0)
+
+DEPENDENCIES:
+  - SIATools (from `../`)
+
+EXTERNAL SOURCES:
+  SIATools:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Reachability: 1ef8adf5c4e3d362f96515d4278f68dad3c26930
+  SIAEnumerator: cfc6631051a707edef2cfb248116dcbb09d21ba2
+  SIATools: af068d0ee6e3ec6b50f8870bcbe5510ada0377d8
+
+COCOAPODS: 0.35.0
