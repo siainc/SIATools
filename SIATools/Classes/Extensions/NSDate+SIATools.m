@@ -48,20 +48,21 @@
 
 - (NSDateComponents *)sia_componentsWithCalendar:(NSCalendar *)calendar
 {
-    NSUInteger unitFlags = (NSEraCalendarUnit |
-                            NSYearCalendarUnit |
-                            NSMonthCalendarUnit |
-                            NSDayCalendarUnit |
-                            NSHourCalendarUnit |
-                            NSMinuteCalendarUnit |
-                            NSSecondCalendarUnit |
-                            NSWeekCalendarUnit |
-                            NSWeekdayCalendarUnit |
-                            NSWeekdayOrdinalCalendarUnit |
-                            NSQuarterCalendarUnit |
-                            NSWeekOfMonthCalendarUnit |
-                            NSWeekOfYearCalendarUnit |
-                            NSYearForWeekOfYearCalendarUnit);
+    NSUInteger unitFlags = (NSCalendarUnitEra |
+                            NSCalendarUnitYear |
+                            NSCalendarUnitMonth |
+                            NSCalendarUnitDay |
+                            NSCalendarUnitHour |
+                            NSCalendarUnitMinute |
+                            NSCalendarUnitSecond |
+                            NSCalendarUnitWeekOfMonth |
+                            NSCalendarUnitWeekOfYear |
+                            NSCalendarUnitWeekday |
+                            NSCalendarUnitWeekdayOrdinal |
+                            NSCalendarUnitQuarter |
+                            NSCalendarUnitWeekOfMonth |
+                            NSCalendarUnitWeekOfYear |
+                            NSCalendarUnitYearForWeekOfYear);
     NSDateComponents *components = [calendar components:unitFlags fromDate:self];
     return components;
 }

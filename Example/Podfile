@@ -1,8 +1,6 @@
-source 'https://github.com/CocoaPods/Specs.git'
-
-
-target 'SIATools', :exclusive => true do
-  pod "SIATools", :path => "../"
-
+use_frameworks!
+target 'SIATools_Tests' do
+  pod 'SIATools', :path => '../'
+  
   
 end

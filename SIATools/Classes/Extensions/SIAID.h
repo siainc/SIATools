@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-NSString *SIACreateUUID();
+NSString *SIACreateUUID(void);
 
 NSString *SIAGetUIID(BOOL useKeychain);
-NSString *SIAGetUIIDByUserDefaults();
-NSString *SIAGetUIIDByKeychain();
+NSString *SIAGetUIIDByUserDefaults(void);
+NSString *SIAGetUIIDByKeychain(void);

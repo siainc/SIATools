@@ -17,7 +17,7 @@
 #define SIA_CREATE_UIID_KEY  @"SIA_CREATE_UIID_KEY"
 #define SIA_KEYCHAIN_ACCOUNT @"SIA_KEYCHAIN_ACCOUNT"
 
-NSString *SIACreateUUID()
+NSString *SIACreateUUID(void)
 {
     CFUUIDRef uuid = CFUUIDCreate(kCFAllocatorDefault);
     NSString *uuidString = (__bridge_transfer NSString *)CFUUIDCreateString(kCFAllocatorDefault, uuid);
@@ -35,7 +35,7 @@ NSString *SIAGetUIID(BOOL useKeychain)
     }
 }
 
-NSString *SIAGetUIIDByUserDefaults()
+NSString *SIAGetUIIDByUserDefaults(void)
 {
     NSString *UIID = [[NSUserDefaults standardUserDefaults] objectForKey:SIA_CREATE_UIID_KEY];
     if (UIID == nil) {
@@ -46,7 +46,7 @@ NSString *SIAGetUIIDByUserDefaults()
     return UIID;
 }
 
-NSString *SIAGetUIIDByKeychain()
+NSString *SIAGetUIIDByKeychain(void)
 {
     NSString *UIID = nil;
     

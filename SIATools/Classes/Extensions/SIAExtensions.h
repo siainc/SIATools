@@ -13,12 +13,10 @@
 #import "NSDate+SIATools.h"
 #import "NSObject+SIATools.h"
 #import "NSStream+SIATools.h"
-#import "NSString+SIAHalfwidth.h"
 #import "NSString+SIATools.h"
 #import "NSURL+SIATools.h"
 #import "SIAID.h"
 #import "SIAPathTools.h"
-#import "SIAWeakReference.h"
 #import "UIColor+SIATools.h"
 #import "UIImage+SIATools.h"
 

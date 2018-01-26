@@ -11,7 +11,6 @@
 
 #import "SIABaseOperation.h"
 #import "SIABlockOperation.h"
-#import "SIAConnectionOperation.h"
 #import "SIAOperationQueue.h"
 
 #endif

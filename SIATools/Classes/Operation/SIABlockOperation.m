@@ -56,7 +56,7 @@
     [self setupExecuting];
     
     [self.blocks enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        void (^executionBlock)() = obj;
+        void (^executionBlock)(void) = obj;
         executionBlock();
         if (self.isCancelled || self.isFinished) {
             *stop = YES;

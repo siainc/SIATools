@@ -22,14 +22,14 @@
 - (id)sia_associatedObjectForKey:(const void *)key;
 - (void)sia_setAssociatedObject:(id)object forKey:(const void *)key;
 
-- (void)sia_changeValueForKey:(NSString *)key changeBlock:(void (^)())changeBlock;
+- (void)sia_changeValueForKey:(NSString *)key changeBlock:(void (^)(void))changeBlock;
 - (void)sia_change:(NSKeyValueChange)changeKind
    valuesAtIndexes:(NSIndexSet *)indexes
             forKey:(NSString *)key
-       changeBlock:(void (^)())changeBlock;
+       changeBlock:(void (^)(void))changeBlock;
 - (void)sia_changeValueForKey:(NSString *)key
               withSetMutation:(NSKeyValueSetMutationKind)mutationKind
                  usingObjects:(NSSet *)objects
-                  changeBlock:(void (^)())changeBlock;
+                  changeBlock:(void (^)(void))changeBlock;
 
 @end

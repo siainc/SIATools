@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-NSString *SIADocumentDirectoryPath();
-NSURL *SIADocumentDirectoryURL();
-NSString *SIACacheDirectoryPath();
-NSURL *SIACacheDirectoryURL();
+NSString *SIADocumentDirectoryPath(void);
+NSURL *SIADocumentDirectoryURL(void);
+NSString *SIACacheDirectoryPath(void);
+NSURL *SIACacheDirectoryURL(void);

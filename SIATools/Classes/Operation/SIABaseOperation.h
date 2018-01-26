@@ -16,8 +16,8 @@
 @property (assign, readwrite, getter = isFinished) BOOL finished;
 @property (assign, readwrite, getter = isCancelled) BOOL cancelled;
 
-@property (nonatomic, copy, readwrite) void (^execution)();
-@property (nonatomic, copy, readwrite) void (^cancellation)();
+@property (nonatomic, copy, readwrite) void (^execution)(void);
+@property (nonatomic, copy, readwrite) void (^cancellation)(void);
 
 - (void)setupExecuting;
 - (void)setupFinished;

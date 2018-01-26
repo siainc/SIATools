@@ -8,22 +8,22 @@
 
 #import "SIAPathTools.h"
 
-NSString *SIADocumentDirectoryPath()
+NSString *SIADocumentDirectoryPath(void)
 {
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 }
 
-NSURL *SIADocumentDirectoryURL()
+NSURL *SIADocumentDirectoryURL(void)
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
-NSString *SIACacheDirectoryPath()
+NSString *SIACacheDirectoryPath(void)
 {
     return [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
 }
 
-NSURL *SIACacheDirectoryURL()
+NSURL *SIACacheDirectoryURL(void)
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSCachesDirectory inDomains:NSUserDomainMask] lastObject];
 }

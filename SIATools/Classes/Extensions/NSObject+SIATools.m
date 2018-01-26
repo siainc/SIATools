@@ -81,7 +81,7 @@
     objc_setAssociatedObject(self, key, object, OBJC_ASSOCIATION_RETAIN);
 }
 
-- (void)sia_changeValueForKey:(NSString *)key changeBlock:(void (^)())changeBlock
+- (void)sia_changeValueForKey:(NSString *)key changeBlock:(void (^)(void))changeBlock
 {
     [self willChangeValueForKey:key];
     changeBlock();
@@ -91,7 +91,7 @@
 - (void)sia_change:(NSKeyValueChange)changeKind
    valuesAtIndexes:(NSIndexSet *)indexes
             forKey:(NSString *)key
-       changeBlock:(void (^)())changeBlock
+       changeBlock:(void (^)(void))changeBlock
 {
     [self willChange:changeKind valuesAtIndexes:indexes forKey:key];
     changeBlock();
@@ -101,7 +101,7 @@
 - (void)sia_changeValueForKey:(NSString *)key
               withSetMutation:(NSKeyValueSetMutationKind)mutationKind
                  usingObjects:(NSSet *)objects
-                  changeBlock:(void (^)())changeBlock
+                  changeBlock:(void (^)(void))changeBlock
 {
     [self willChangeValueForKey:key withSetMutation:mutationKind usingObjects:objects];
     changeBlock();
